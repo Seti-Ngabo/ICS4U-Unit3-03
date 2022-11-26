@@ -82,17 +82,18 @@ const userInput = Number(
 )
 
 if (isNaN(userInput)) {
-        console.log('\nERROR: Invalid Input')
+  console.log('\nERROR: Invalid Input')
 } else if (userInput > max || userInput < min) {
-        console.log('\nERROR: Invalid Input')
-} else  {
-        console.log(`Your number is in index: ${binarySearch(
-        randomNumberArray,
-        userInput,
-        0,
-        size-1
-)}`
-           )
+  console.log('\nERROR: Invalid Input')
+} else {
+  console.log(
+    `Your number is in index: ${binarySearch(
+      randomNumberArray,
+      userInput,
+      0,
+      size - 1
+    )}`
+  )
 }
 
 console.log('\nDone.')
